@@ -1,0 +1,839 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a[href] {
+    color: white;
+}
+
+p[Lorem] {
+    font-size: 60px;
+}
+
+[data-content=content] {
+    font-weight: 40px;
+}
+
+
+/* Structural Selector  */
+
+p:only-of-type {
+    font-family: sans-serif;
+}
+
+
+/* Negation pseudo class  */
+
+img:not([alt]) {
+    border: 3px solid white;
+}
+
+
+/* to get get fixed navigation bar when its minimized  */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* to remove dots in navigation links */
+
+ul {
+    list-style: none;
+}
+
+
+/* to remove underline in buttons */
+
+a {
+    text-decoration: none;
+}
+
+
+/* fixed location for CV buttton , Name , My photo  */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* Navigation bar - Styles */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, #07d8e8 0%, #00b182 73%);
+}
+
+
+/* My LOGO */
+
+.logo img {
+    height: 45px;
+}
+
+
+/* to minimize Navigation bar  */
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 650;
+    color: white;
+    /* Navigation bar letters - normal color*/
+    letter-spacing: 1px;
+}
+
+
+/* Contact Me link in Nav bar */
+
+.contactme {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 650;
+    color: white;
+    /* Navigation bar contact me letters - normal color  */
+    letter-spacing: 1px;
+}
+
+.contactme:hover {
+    background: linear-gradient(to left, #54e807 0%, #dbff00 50%);
+    /* Navigation bar mouseover color for contact */
+    color: black;
+    /* Navigation bar mouseover color contact */
+    box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
+    transition: all ease 0.2s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to left, #54e807 0%, #dbff00 50%);
+    /* Navigation bar mouseover color */
+    color: black;
+    /* Navigation bar mouseover color */
+    box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
+    transition: all ease 0.2s;
+}
+
+
+/* Hello Im maleesha part image */
+
+.model img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.model {
+    width: 500px;
+    height: 500px;
+}
+
+
+/* Hello Im maleesha part */
+
+.content {
+    width: 90%;
+    display: flex;
+    font-family: helvetica;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* If remove this part photo will go to the right */
+    transform: translate(-50%, -50%);
+}
+
+
+/* Hello Im maleesha part Text*/
+
+.homeText {
+    width: 500px;
+}
+
+.homeText h1 {
+    font-size: 3.5rem;
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+}
+
+.homeText p {
+    color: #747474;
+}
+
+
+/* CV Button */
+
+.cvButton {
+    width: 189px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #07d8e8 0%, #00b182 73%);
+    border-radius: 19px;
+    font-family: helvetica;
+}
+
+.cvButton:hover {
+    background: linear-gradient(to left, #07d8e8 0%, #00b182 73%);
+    transition: all ease 0.2s;
+}
+
+
+/* About me part */
+
+#aboutme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto auto 50px auto;
+    font-family: helvetica;
+}
+
+.aboutmeText {
+    width: 400px;
+}
+
+.aboutmeImg {
+    width: 400px;
+    height: 600px;
+}
+
+.aboutmeImg img:hover {
+    height: 620px;
+    transition: all ease 0.2s;
+    opacity: 0.3;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    padding-bottom: 650px;
+    padding-left: 380px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.aboutmeImg:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #36b7b5;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.aboutmeImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.aboutmeHeading span {
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.aboutmeHeading h2 {
+    color: #1c3548;
+    font-size: 3.3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.aboutmeBoxContainer {
+    margin-top: 30px;
+}
+
+.aboutmeBox {
+    display: flex;
+    margin: 25px 0px;
+}
+
+.aboutmeBoxIcon {
+    margin-right: 12px;
+}
+
+.aboutmeBoxIcon i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 1.1rem;
+}
+
+.aboutmeBoxText strong {
+    color: #1c3548;
+    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.aboutmeBoxText p {
+    color: #747474;
+    font-size: 0.9rem;
+}
+
+#recentEvents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+    font-family: helvetica;
+}
+
+.recentEventsHeading span {
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.recentEventsHeading h3,
+#contactme h3 {
+    /* Recent event and friends say Main heading color and ETC */
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.recentEventsImg {
+    margin: 0px 40px;
+}
+
+
+/* To get Fixed size for Recent Event Photo */
+
+.recentEventsImg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Recent event Button color and ETC */
+
+.recentEventsButton {
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    width: 190px;
+    margin-top: -20px;
+    background: linear-gradient(to right, #07d8e8 0%, #00b182 73%);
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+}
+
+.recentEventsButton:hover {
+    transition: all ease 0.2s;
+    background: linear-gradient(to left, #07d8e8 0%, #00b182 73%);
+}
+
+#newsLetter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    font-family: helvetica;
+}
+
+#newsLetter h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+#newsLetter img {
+    height: 300px;
+}
+
+.newsLetterInput a {
+    width: 200px;
+    height: 35px;
+    background: linear-gradient(to right, #07d8e8 0%, #00b182 73%);
+    color: white;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.newsLetterInput a:hover {
+    background: linear-gradient(to left, #07d8e8 0%, #00b182 73%);
+    transition: all ease 0.2s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px;
+    background-color: white;
+}
+
+footer p {
+    margin: 15px 0px;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+nav .menuButton,
+.menu-icon {
+    display: none;
+}
+
+@media(max-width:1140px) {
+    .content {
+        width: 100%;
+    }
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+    .homeText,
+    .model {
+        margin: 10px;
+    }
+    .homeText h1 {
+        font-size: 3rem;
+    }
+    .aboutmeImg {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+/*  @media is used to set CSS in any device */
+
+@media(max-width:900px) {
+    .menuIcon {
+        display: block;
+    }
+    nav {
+        justify-content: space-between;
+        height: 65px;
+        padding: 0px 30px;
+    }
+    .logo img {
+        height: 35px;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background: linear-gradient(to left, #07d8e8 0%, #00b182 73%);
+        border-bottom: 4px solid #1db096;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu li {
+        width: 100%;
+    }
+    nav .menu li a {
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(38, 38, 38, 0.04);
+    }
+    nav .menuIcon {
+        cursor: pointer;
+        float: right;
+        padding: 5px 20px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menuIcon .navIcon {
+        background-color: black;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width: 18px;
+    }
+    nav .menuIcon .navIcon:before,
+    nav .menuIcon .navIcon:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 3px;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100px;
+    }
+    nav .menuIcon .navIcon:before {
+        top: 2px;
+    }
+    nav .menuIcon .navIcon:after {
+        top: -2px;
+    }
+    nav .menuButton:checked~.menuIcon .navIcon {
+        background: transparent;
+    }
+    nav .menuButton:checked~.menuIcon .navIcon:before {
+        transform: rotate(-0deg);
+        top: 0;
+    }
+    nav .menuButton:checked~.menuIcon .navIcon:after {
+        transform: rotate(0deg);
+        top: 0;
+    }
+    nav .menuButton {
+        display: none;
+    }
+    nav .menuButton:checked~.menu {
+        display: block;
+    }
+    #aboutme {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    aboutme-text {
+        width: 400px;
+    }
+    .aboutmeImg {
+        width: 40%;
+        height: 300px;
+    }
+    .aboutmeImg img {
+        object-fit: cover;
+        object-position: left;
+    }
+    .recentEventsHeading h3,
+    .toMyCvHeading h3,
+    #contact h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .recentEventsHeading,
+    .toMyCvHeading {
+        text-align: center;
+        padding: 0px 15px;
+    }
+}
+
+
+/*  @media is used to set CSS in any device */
+
+@media(max-width:720px) {
+    .model {
+        display: none;
+    }
+    .homeText {
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #newsLetter img {
+        height: 200px;
+    }
+    footer {
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    footer p {
+        text-align: center;
+    }
+    .recentEventsButton {
+        margin: 0px;
+    }
+}
+
+
+/*  @media is used to set CSS in any device */
+
+@media(max-width:530px) {
+    .newsLetterInput {
+        width: 90%;
+    }
+    .aboutmeImg {
+        display: none;
+    }
+    .aboutmeText {
+        width: 85%;
+    }
+    #aboutme {
+        margin: 0px;
+    }
+}
+
+.iconBar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.iconBar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+}
+
+.iconBar a:hover {
+    background: linear-gradient(to left, #54e807 0%, #dbff00 50%);
+}
+
+
+/* -------------------------------------  To My CV ----------------------------------- */
+
+
+/*------------------------------------------------------------------------------------ */
+
+#toMyCv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+    font-family: helvetica;
+}
+
+.toMyCvHeading span {
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.toMyCvHeading h3 {
+    /* Recent event and friends say Main heading color and ETC */
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/*  */
+
+.toMyCvImg {
+    margin: 0px 40px;
+}
+
+
+/* To get Fixed size for CV  Photo */
+
+.toMyCvImg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------------- Register My News Letter  //  Contact Me --------------------- */
+
+
+/*------------------------------------------------------------------------------------ */
+
+#newsLetterPage {
+    background: url('Images/Z.gif') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#contactMePage {
+    background: url('Images/Z7.gif') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.newsRegister {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    background: #255958;
+    padding: 29px;
+}
+
+.newsRegister .newsRegisterTitle h1 {
+    color: #06c7c4;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: sans-serif;
+}
+
+.newsRegisterTitleForm {
+    display: flex;
+}
+
+.newsRegisterFields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.newsRegisterFields,
+.yourMessage,
+.yourIdea {
+    width: 48%;
+}
+
+.newsRegisterFields .input,
+.yourMessage textarea,
+.yourIdea textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #06c7c4;
+    padding: 10px;
+    color: #06c7c4;
+    width: 100%;
+}
+
+.yourIdea textarea {
+    height: 266px;
+}
+
+.yourMessage textarea {
+    height: 328px;
+}
+
+
+/* Pseudo-element */
+
+ ::-webkit-input-placeholder {
+    color: #06c7c4;
+}
+
+.newsRegisterButton {
+    background: linear-gradient(to right, #07d8e8 0%, #00b182 73%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.newsRegisterButton:hover {
+    background: linear-gradient(to left, #07d8e8 0%, #00b182 73%);
+    transition: all ease 0.2s;
+}
+
+
+/*  @media is used to set CSS in any device */
+
+@media screen and (max-width: 600px) {
+    .newsRegisterTitleForm {
+        flex-direction: column;
+    }
+    .yourIdea textarea,
+    .yourMessage textarea {
+        height: 80px;
+    }
+    .newsRegisterFields,
+    .yourIdea,
+    .yourMessage {
+        width: 100%;
+    }
+}
+
+
+/* -------------------------------------  About Me Page ----------------------------------- */
+
+
+/*----------------------------------------------------------------------------------------- */
+
+#aboutMeRecent {
+    background: url('Z14.gif') no-repeat top center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.aboutMePageImg img {
+    width: 100%;
+    height: 100%;
+}
+
+#aboutMeTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    font-family: helvetica;
+    height: 100%;
+}
+
+#aboutMeTeam h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+#aboutMeTeam img {
+    height: 800px;
+    width: 1275px;
+}
